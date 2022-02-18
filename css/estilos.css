@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Lato', sans-serif;
+
 }
 
 
@@ -12,7 +13,7 @@ body{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 16px;
   }
   
   /* Track */
@@ -22,17 +23,17 @@ body{
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(78, 2, 108);
+    background: rgb(4, 234, 255);
   }
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #000;
+    background: rgb(3, 61, 128);
   }
 
 /* Header*/
 header{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-image: url(/img/Onepiece.jpg);
     background-size: cover;
     background-position: center;
@@ -94,9 +95,9 @@ header{
 
 /*  Footer */
 footer {
-    background: #0f0f0f;
+    background: #2a2828;
     position: relative;
-    padding: 80px;
+    padding: 70px;
   }
   
   .footer-content {
@@ -117,6 +118,7 @@ footer {
   
   .footer-content p {
     color: #565656;
+    
   }
   
   .footer-content a {
