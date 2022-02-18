@@ -4,10 +4,33 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Ginebra', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
-header
-{
+
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(78, 2, 108);
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000;
+  }
+
+/* Header*/
+header{
     width: 100%;
     height: 100vh;
     background-image: url(/img/Onepiece.jpg);
@@ -68,3 +91,81 @@ header
     height: 100px;
 
 }
+
+/*  Footer */
+footer {
+    background: #0f0f0f;
+    position: relative;
+    padding: 80px;
+  }
+  
+  .footer-content {
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .footer-content p {
+    color: #565656;
+  }
+  
+  .footer-content a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #565656;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .footer-content a:hover {
+    color: #11abb0;
+  }
+  
+  .footer-content a + a {
+    margin-left: 30px;
+  }
+  
+  footer h4 {
+    color: #ddd;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      padding: 80px 0;
+    }
+  
+    .footer-content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  
+    .footer-content > div {
+      width: 100% !important;
+      margin-bottom: 45px;
+    }
+  
+    .footer-content h4 {
+      margin-bottom: 20px;
+    }
+  
+    .footer-content a + a {
+      margin-left: 18px;
+    }
+  }
