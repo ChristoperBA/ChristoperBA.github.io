@@ -5,7 +5,74 @@
 }
 body{
     font-family: 'Lato', sans-serif;
+    background-color: rgb(255, 255, 255);
+  
+   
 }
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+  top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .card{
+  
+  width: 700px;
+  height: 470px;
+  margin: 80px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 20px ;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5) ;
+  border-left: 1px solid rgba(255, 255, 255, 0.5) ;
+  backdrop-filter: blur(5px);
+  
+}
+.container .card .content{
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s; 
+  top: auto;
+}
+.container .card:hover .content{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.container .card .content h3{
+  font-size: 1.8em;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+.container .card .content p{
+  
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+
+}
+.container .card .content a{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: rgb(255, 255, 255);
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15PX rgb(0, 0, 0, 0.5s);
+
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 16px;

@@ -4,7 +4,7 @@
 _Project created to introduce myself, show my knowledge, experience, studies and hobbies._
 
 ## Author ✒️
-Christoper Briceno Arias - [ChristoperBA](https://github.com/ChristoperBA)
+* [ChristoperBA](https://github.com/ChristoperBA)
 
 ## Licencia 📄
 This repository is 100% Open Source, feel free to use it for your projects
