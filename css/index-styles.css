@@ -67,10 +67,11 @@ header{
 }
 .menu li{
     list-style: none;
-    margin: 10px;
+    margin: 9px;
 
 }
 .menu li a{
+    font-size: 19px;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
