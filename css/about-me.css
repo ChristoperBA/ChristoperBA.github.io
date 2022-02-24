@@ -108,8 +108,8 @@ top: 10px;
   margin-right: auto;
 }
 .container .card{
-  width: 700px;
-  height: 500px;
+  width: 750px;
+  height: 550px;
   margin: 80px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 20px ;
@@ -127,6 +127,31 @@ top: 10px;
 .container .card .introdution{
     text-align: center;
 }
+.container .card .introdution h1{
+  font-family: 'Bookman Old Style', sans-serif;
+  font-size: 1.5em;
+}
+
+.container .card .introdution:hover h1{
+  text-align: center;
+  transform: translateY(-1000px);
+  opacity: 0;
+  transition: 0.5s; 
+  top: auto;
+  font-size: 1.8em;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+.container .card .introdution:hover h2{
+  text-align: center;
+  transform: translateY(-1000px);
+  opacity: 0;
+  transition: 0.5s; 
+  top: auto;
+  font-size: 1.8em;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
 
 .container .card .content{
   padding: 20px;
@@ -136,23 +161,22 @@ top: 10px;
   transition: 0.5s; 
   top: auto;
 }
-
 .container .card:hover .content{
   
   transform: translateY(0px);
   opacity: 1;
 }
-
 .container .card .content h3{
-  font-size: 1.8em;
+  font-family: 'Bookman Old Style', sans-serif;
+  font-size: 1.5em;
   color: rgb(0, 0, 0);
   z-index: 1;
 }
 .container .card .content p{
   color: rgb(0, 0, 0);
-  font-weight: 280;
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
 }
-
 .profile{
   border-radius: 50%;
 }
