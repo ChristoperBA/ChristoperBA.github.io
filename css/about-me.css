@@ -197,9 +197,9 @@ top: 10px;
 
 /*  Footer */
 footer {
-    background: #131212;
+    background: #201f1fd2;
     position: relative;
-    padding: 60px;
+    padding: 50px;
   }
   
   .footer-content {
@@ -229,15 +229,15 @@ footer {
   }
   
   .footer-content a:hover {
-    color: #11abb0;
+    color: #11e2e9;
   }
   
   .footer-content a + a {
-    margin-left: 30px;
+    margin-left: 10px;
   }
   
   footer h4 {
-    color: rgb(231, 229, 229);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
@@ -245,10 +245,7 @@ footer {
   }
   
   @media (max-width: 768px) {
-    footer {
-      padding: 80px 0;
-    }
-  
+   
     .footer-content {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -257,15 +254,49 @@ footer {
     }
   
     .footer-content > div {
-      width: 100% !important;
-      margin-bottom: 45px;
+      width: 100% ;
+      margin-bottom: 40px;
     }
   
     .footer-content h4 {
       margin-bottom: 20px;
+      color:white;
+      position:fixed;
+      text-align: center;
+      font-size:10px;
+      	
+    }
+    .footer-content h2 {
+      
+      color:white;
+      position:fixed;
+      text-align: center;
+      font-size:10px;
+      	
+    }
+    .footer-content h3 {
+      color:rgba(133, 0, 174, 0.897);
+      position:fixed;
+      text-align: center;
+      font-size:10px;
+      	
     }
   
-    .footer-content a + a {
-      margin-left: 18px;
-    }
+    
+  }
+  .signature h3{
+      margin-left: 70px;
+      font-family: 'Poppins', sans-serif;
+      color:rgb(198, 9, 255);
+      font-size: 26px;
+  }
+  .signature p{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+  } 
+  /*Change name*/
+  .sopa {
+    border-radius: 50%;
+
   }
