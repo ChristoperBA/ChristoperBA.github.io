@@ -8,6 +8,6 @@ _Project created to introduce myself, show my knowledge, experience, studies and
 
 ## Licencia 📄
 This repository is 100% Open Source, feel free to use it for your projects
-but don't forget to give me credit😊
+but don't forget to give me credit.😊
 * [ChristoperBA](https://github.com/ChristoperBA)
 
