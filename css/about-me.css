@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
-    color: #fff;
+    color: rgb(199, 199, 199);
     font-family: 'Lato', sans-serif;
-    background: #fffbfb;
+    background-color: rgb(0, 0, 0);
+    
   
 }
 /* Header*/
@@ -30,10 +32,7 @@ header{
   background-color: #fff;
   padding: 15px;
 }
-.nav.active .logo,
-.nav.active a{
-  color: #000;
-}
+
 .nav.active a:hover{
   background: #000;
   color: #fff;
@@ -55,7 +54,7 @@ header{
 
 }
 .menu li a{
-  font-size: 19px;
+  font-size: 22px;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -96,20 +95,19 @@ top: 10px;
 
 
 /* Container Card */
-
 .container{
   position: relative;
   display: flex;
   justify-content: center;
-  max-width: 1200px;
+  
   flex-wrap: wrap;
   z-index: 1;
-  top: 7%;
+  
   margin-left: auto;
   margin-right: auto;
 }
 .container .card{
-  width: 750px;
+  width: 780px;
   height: 550px;
   margin: 80px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
@@ -125,23 +123,10 @@ top: 10px;
   backdrop-filter: blur(60px);
 }
 
-.container .card .introdution{
-    text-align: center;
-}
 .container .card .introdution h1{
   font-family: 'Bookman Old Style', sans-serif;
   font-size: 1.5em;
-}
-
-.container .card .introdution:hover h1{
-  text-align: center;
-  transform: translateY(-1000px);
-  opacity: 0;
-  transition: 0.5s; 
-  top: auto;
-  font-size: 1.8em;
-  color: rgb(0, 0, 0);
-  z-index: 1;
+  
 }
 .container .card .introdution:hover h2{
   text-align: center;
@@ -150,31 +135,28 @@ top: 10px;
   transition: 0.5s; 
   top: auto;
   font-size: 1.8em;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 
-.container .card .content{
+.container .card .introdution{
   padding: 20px;
-  text-align: center;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: 0.5s; 
+  text-align: center; 
   top: auto;
 }
-.container .card:hover .content{
+.container .card:hover .introdution{
   
   transform: translateY(0px);
   opacity: 1;
 }
-.container .card .content h3{
+.container .card .introdution h3{
   font-family: 'Bookman Old Style', sans-serif;
   font-size: 1.5em;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
-.container .card .content p{
-  color: rgb(0, 0, 0);
+.container .card .introdution p{
+  color: rgb(255, 255, 255);
   font-size: 17px;
   font-family: 'Lato', sans-serif;
 }
@@ -186,8 +168,9 @@ top: 10px;
 /* Body*/
 
 .body1{
-    color: rgb(56, 55, 55);
-    font-family: 'Raleway', sans-serif; 
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    
 }
 .body1 h1{
     background: -webkit-linear-gradient(rgb(5, 255, 201), rgb(111, 250, 255));
@@ -211,40 +194,87 @@ top: 10px;
   margin: 40px;
 }
 
-
-.body2{
-  color: rgb(56, 55, 55);
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-}
-.body2 h1{
-    background: -webkit-linear-gradient(rgb(247, 133, 3), rgb(255, 251, 8));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    font-size: 40px;
-}
-
-.body2 p {
-  text-align: justify-all;
-  margin-top: 10px;
-  font-size: 18px;
-  margin: 30px;
-}
-#img2{
-  float: left ;
-  margin-right: 20px;
-  margin: 30px;
-}
-.body2 .list {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-
 /*End Body*/
+/*Carousel*/
 
+.carousel-wrapper {
+  height: 400px;
+  position: relative;
+  width: 800px;
+  display: block;
+  margin: 50px auto ;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+.arrow-prev {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+
+}
+.arrow-next {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^= "item"] {
+  display: none;
+}
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url('/img/france.jpg');
+  background-size: cover;
+}
+.item-2 {
+  background: url('/img/Comingsoon.jpg');
+  background-size: cover;
+}
+.item-3 {
+  background: url('/img/mountain.jpg');
+  background-size: cover;
+}
+.item-4 {
+  background: url('/img/mountain.jpg');
+  background-size: cover;
+}
+.item-5 {
+  background: url('/img/mountain.jpg');
+  background-size: cover;
+}
+
+*:target ~ .item-1{
+  opacity: 0;
+}
+#item-1:target ~ .item-1 {
+  opacity: 1;
+
+}
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4,#item-5:target ~ .item-5 {
+  z-index: 3;
+  opacity: 1;
+} 
+
+/*Carousel End*/
 
 /*  Footer */
 footer {
