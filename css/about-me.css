@@ -7,7 +7,7 @@
 body{
     color: rgb(199, 199, 199);
     font-family: 'Lato', sans-serif;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(81, 81, 81);
     
   
 }
@@ -25,7 +25,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 25px;
   transition: all 0.5s ease;
 }
 .nav.active{
@@ -38,16 +38,22 @@ header{
   color: #fff;
 }
 
-.logo{
-  font-size: 30px;
-  color: #fff;
-  font-weight: 100;
+.container-logo h1{
+      margin-left: 70px;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-size: 25px;
+      
+  }
+
+.container-logo .profile{
+  border-radius: 50%;
 }
+
 .menu{
   display: flex;
- 
-
 }
+
 .menu li{
   list-style: none;
   margin: 9px;
@@ -170,6 +176,7 @@ top: 10px;
 .body1{
     color: rgb(255, 255, 255);
     font-family: 'Raleway', sans-serif;
+    background-color: black;
     
 }
 .body1 h1{
@@ -198,14 +205,14 @@ top: 10px;
 /*Carousel*/
 
 .carousel-wrapper {
-  height: 400px;
+  height: 500px;
   position: relative;
   width: 800px;
   display: block;
   margin: 50px auto ;
   border: 2px solid rgb(255, 255, 255);
+  background-color: black;
 }
-
 .carousel-item {
   position: absolute;
   top: 0;
@@ -285,7 +292,7 @@ footer {
   
   .footer-content {
     text-align: center;
-    max-width: 85%;
+    max-width: 90%;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -303,10 +310,12 @@ footer {
   .footer-content a {
     display: inline-block;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
     color: rgba(216, 207, 207, 0.904);
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    padding: 2px;
+    
   }
   
   .footer-content a:hover {
@@ -340,11 +349,10 @@ footer {
     }
   
     .footer-content h4 {
-      margin-bottom: 20px;
       color:white;
-      position:fixed;
       text-align: center;
       font-size:10px;
+      
       	
     }
   }
@@ -362,7 +370,7 @@ footer {
     font-family: 'Poppins', sans-serif;
   } 
   /*Change name*/
-  .sopa {
+  .profile {
     border-radius: 50%;
 
   }
