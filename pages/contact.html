@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
     <!--Tittle--> 
     <title>ChristopherBA</title>
     <!--Icon--> 
     <link rel="icon" href="/icons/david.jpg"  />
 </head>
 <body>
-    <header>
+    <header class="bg_animate">
         <nav class="nav">
           <!-- Falta insertar imagen para el logo-->
           <div class="logo">Contact</div>
@@ -24,25 +25,93 @@
             <li><a href="/pages/contact.html">Contact</a></li>
           </ul>
         </nav>
-      </header>
+        <section class="banner contenedor">
+          <section class="banner_title">
+              <h2>Want to get<br> in touch?</h2>
+              <a href="#" class="llamanos">Let's connect</a>
+          </section>
+          <div class="banner_img">
+              <img height="400" width="400" src="/icons/david.jpg" alt="">
+          </div>
+      </section>
 
-      <!--Social Media --> 
-    <!-- 
-    Youtube tiene rickrolleo mientras subo video a youtube 
-    Ordenar por importancia  
-    -->
-    <h1>Social Media✨</h1>
-    <a href="https://github.com/ChristoperBA" > 
-      <img height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></a>
-    <a href="https://www.linkedin.com/in/christopher-brice%C3%B1o-arias-1b166420b/" > 
-      <img height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /></a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" > 
-      <img height="35" width="35" src="/icons/youtube.jpg" /></a>
-    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=bricenoc506@gmail.com">
-      <img height="35" width="35" src="/icons/gmail.jpg"></a>
-    <a href="https://www.instagram.com/__chococris.py/" >
-      <img height="32" width="32" src="/icons/instagram.jpg" ></a>
-    
+      <div class="burbujas">
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+          <div class="burbuja"></div>
+      </div>
+      </header><br>
+      <!--Contact Forms-->
+      <div class="contentform">
+
+        <h1 class="banner-contact">Contact <span>Me</span></h1><br><br>
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contact me</h3>
+                <form action="">
+                    <p>
+                        <label>FullName</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Email Adress</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Affair</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                       <label>Message</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Send Message
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <img class="profile" height="180" width="180" src="/img/profile.jpg"><br>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>‎      ‏‏‎San José, Costa Rica</li>
+                    <li><i class="fas fa-phone"></i>‎      ‏‏‎(506+) 6291-8922</li>
+                    <li><i class="fas fa-envelope-open-text"></i>‎      ‏‏‎bricenoc506@gmail.com</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam 
+                  necessitatibus repellendus?Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Libero provident</p>
+                <p>© 2022 - ChristoperBA.me</p><br>
+                <div class="social">
+                  <a href="https://github.com/ChristoperBA" > 
+                    <img height="40" width="40" src="/icons/github.png" /></a>
+                  <a href="https://www.linkedin.com/in/christopher-brice%C3%B1o-arias-1b166420b/" > 
+                    <img height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /></a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" > 
+                    <img height="40" width="55" src="/icons/youtube.jpg" /></a>
+                  <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=bricenoc506@gmail.com">
+                    <img height="40" width="55" src="/icons/gmail.jpg"></a>
+                  <a href="https://www.instagram.com/__chococris.py/" >
+                    <img height="40" width="40" src="/icons/instagram.jpg" ></a>
+                  <a href="https://sneaky-dugong-c86.notion.site/About-me-e69c312872b54688b0b88119211ab872">
+                    <img height="40" width="40" src="/icons/notion.jpg" ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!--End Contact Forms-->
     <!--Footer start-->
     <footer id="Contact">
       <div class="footer-content">
@@ -71,7 +140,7 @@
           </a>
           <a 
             href="https://github.com/ChristoperBA">
-            <img height="30" width="30" src="/icons/github.png">
+            <img height="40" width="40" src="/icons/github.png">
           </a>
           <a
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">         

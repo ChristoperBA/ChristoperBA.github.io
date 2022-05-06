@@ -99,7 +99,7 @@ top: 10px;
 }
 /* End Scrollbar*/
 
-
+/*Body*/
 /* Container Card */
 .container{
   position: relative;
@@ -171,15 +171,7 @@ top: 10px;
 }
 /* End Container Card */
 
-/* Body*/
-
-.body1{
-    color: rgb(255, 255, 255);
-    font-family: 'Raleway', sans-serif;
-    background-color: black;
-    
-}
-.body1 h1{
+.exp h1{
     background: -webkit-linear-gradient(rgb(5, 255, 201), rgb(111, 250, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -187,7 +179,7 @@ top: 10px;
     font-size: 40px;
     
 }
-.body1 p {
+.exp p {
   
   text-align: justify-all;
   margin-top: 10px;
@@ -282,6 +274,7 @@ top: 10px;
 } 
 
 /*Carousel End*/
+/*End Body*/
 
 /*  Footer */
 footer {
@@ -296,7 +289,6 @@ footer {
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
