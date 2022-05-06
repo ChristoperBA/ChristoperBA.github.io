@@ -16,7 +16,7 @@
     <header>
         <nav class="nav">
           <div class="container-logo">
-            <div class="logo"><img align="left" height="55" width="55" src="/img/profile.jpg" class="profile">
+            <div class="logo"><img align="left" height="60" width="60" src="/img/profile.jpg" class="profile">
               <br><h1 align="left">About me</h1>
               </div>
           </div>
@@ -29,6 +29,7 @@
             </ul>
         </nav>
     </header>
+    <section class="background"></section>
     <!--Header End-->
 
     <!-- Body-->
@@ -65,7 +66,7 @@
       <br><br>
       <h1>Experience</h1>
       <p align="justify" >
-        <img id="img1" height="400"  width="400" src="/img/france.jpg"><br><br>
+        <img id="img1" height="400"  width="400" src="/img/france.jpg"><br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto 
         voluptates nesciunt delectus rerum. Illum, laborum consequuntur? Officiis iusto eveniet 
         harum deserunt tenetur unde est nemo possimus.
@@ -172,6 +173,14 @@
   <!--footer end-->
 
   <!--Scripts-->
+  <!--Script para el menu de nav-->
+  <script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("abajo",window.scrollY>0);
+		})
+	</script>
+  <!--Funcionalidad de la carta-->
   <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
   <script>
     VanillaTilt.init(document.querySelector(".card"), {
@@ -181,5 +190,6 @@
     "max-glare":1,
   });
   </script>
+  
 
 </html>
